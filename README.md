@@ -2,6 +2,6 @@
 
 ## Prueba Front Telefónica
 
-Erick Mondragón Aparicio _
-Ingeniero Electrónico _
+Erick Mondragón Aparicio \
+Ingeniero Electrónico \
 Universidad del Valle
