@@ -1,0 +1,46 @@
+@import "../../../sass/index.scss";
+
+.header-menu {
+  display: flex;
+  justify-content: flex-end;
+  background-color: $background-primary;
+  border-top: 1px solid $border-color;
+  border-bottom: none;
+
+  @media (max-width: 640px) {
+    justify-content: center;
+    font-size: 3vw;
+  }
+
+  .ant-menu-item {
+    font-family: $poppins;
+    max-height: 100%;
+
+    a {
+      color: $font-grey;
+    }
+
+    &:hover {
+      a {
+        color: $font-light !important;
+      }
+
+      &::after {
+        border-bottom: none !important;
+      }
+    }
+
+    &.ant-menu-item-selected {
+      background-color: $background-primary-dark;
+      top: 0;
+
+      a {
+        color: $font-light;
+      }
+
+      &::after {
+        border-bottom: none;
+      }
+    }
+  }
+}

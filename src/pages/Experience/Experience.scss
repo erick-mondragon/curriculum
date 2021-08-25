@@ -1,0 +1,54 @@
+@import "../../sass/index.scss";
+
+.experience {
+  font-family: $poppins;
+
+  &__title {
+    font-size: 3vw;
+    color: $primary-color;
+
+    @media (max-width: 640px) {
+      font-size: 5vw;
+      margin-top: 2vw;
+    }
+  }
+
+  &__list {
+    .ant-list-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      .company {
+        font-size: 1.75vw;
+        font-weight: bold;
+        margin-bottom: 0;
+        span {
+          font-size: 1vw;
+          font-style: italic;
+          font-weight: normal;
+
+          @media (max-width: 640px) {
+            font-size: 3vw;
+          }
+        }
+
+        @media (max-width: 640px) {
+          font-size: 5vw;
+        }
+      }
+      .position {
+        font-size: 1.5vw;
+        font-weight: bold;
+
+        @media (max-width: 640px) {
+          font-size: 4.2vw;
+        }
+      }
+      .title-funciones {
+        color: $primary-color;
+      }
+    }
+  }
+}

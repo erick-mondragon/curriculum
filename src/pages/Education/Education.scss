@@ -1,0 +1,97 @@
+@import "../../sass/index.scss";
+
+.education {
+  font-family: $poppins;
+
+  &__title {
+    font-size: 3vw;
+    color: $primary-color;
+
+    @media (max-width: 640px) {
+      font-size: 5vw;
+      margin-top: 2vw;
+    }
+  }
+
+  &__degree {
+    text-align: justify;
+    font-size: 2vw;
+    color: $font-grey;
+
+    @media (max-width: 640px) {
+      font-size: 4vw;
+      margin-top: 2vw;
+    }
+
+    span {
+      font-style: italic;
+    }
+  }
+
+  &__semititle {
+    font-size: 2vw;
+    color: $primary-color;
+
+    @media (max-width: 640px) {
+      font-size: 4vw;
+      margin-top: 2vw;
+    }
+  }
+
+  &__list {
+    .ant-list-item {
+      font-family: $poppins;
+      font-size: 1.2vw;
+      padding: 0;
+
+      @media (max-width: 640px) {
+        font-size: 3vw;
+        margin-top: 1vw;
+        text-align: justify;
+      }
+      div {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__skills {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+
+    .ant-list-item {
+      font-family: $poppins;
+      font-size: 1.2vw;
+      padding: 0;
+
+      @media (max-width: 640px) {
+        font-size: 3vw;
+        margin-top: 1vw;
+        text-align: justify;
+      }
+
+      div {
+        margin-bottom: 0;
+      }
+    }
+
+    &-hard {
+      .ant-list-item {
+        div {
+          .item-rate {
+            position: absolute;
+            right: 0;
+            .ant-rate {
+              font-size: 1vw;
+            }
+
+            @media (max-width: 640px) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
